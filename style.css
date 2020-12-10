@@ -129,6 +129,13 @@ h3 {
 }
 
 /*Portfolio undersider*/
+.navigation {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+  display: none;
+}
+
 .heading,
 .headingsmall {
   font-size: 1.5em;
@@ -296,6 +303,16 @@ p {
   }
 
   /*Portfolio underside*/
+  .navigation {
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    display: inline-block;
+  }
+  .navtext {
+    text-decoration: none;
+    color: var(--maincolor);
+  }
   .container {
     display: grid;
     height: 40vh;
@@ -328,7 +345,7 @@ p {
   }
   .fullscreen-img {
     display: inline;
-    max-height: 300px;
+    max-height: 400px;
   }
   .flex-container {
     display: flex;
@@ -394,7 +411,7 @@ p {
   /*Portfolio underside*/
   .container {
     display: grid;
-    height: 60vh;
+    height: 50vh;
     grid-template-columns: 0.5fr 0.5fr 2fr;
     grid-template-rows: 1fr 7fr;
     grid-template-areas:
