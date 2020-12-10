@@ -1,0 +1,422 @@
+/*Generel kode*/
+:root {
+  --maincolor: black;
+  --secondarycolor: white;
+
+  --maintext: #ffe55e;
+  --secondarytext: #707070;
+  --seondarytext2: #505050;
+  --basictext: #ffffff;
+}
+.blackbackground {
+  padding: 0;
+  margin: 0;
+  background-color: var(--maincolor);
+}
+.whitebackground {
+  padding: 0;
+  margin: 0;
+  background-color: var(--secondarycolor);
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/*Forside*/
+h1 {
+  font-family: "IBM Plex Serif", serif;
+  color: var(--maintext);
+  font-size: 1em;
+  line-height: 25px;
+}
+.test {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+h2 {
+  margin-left: 10%;
+  color: var(--secondarytext);
+  font-size: 0.6em;
+  letter-spacing: 2.5px;
+}
+.test h5 {
+  color: var(--secondarytext);
+  margin-left: 0;
+}
+h5 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 18px;
+  color: var(--secondarytext);
+  margin-left: 10px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.btn {
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 100px;
+  height: 35px;
+  border: #ffe55e solid;
+  color: #ffe55e;
+  background-color: var(--maincolor);
+  box-shadow: inset 0 0 0 0 #ffe55e;
+  transition: ease-out 0.3s;
+  font-size: 0.5em;
+  outline: none;
+}
+.btn:hover {
+  box-shadow: inset 100px 0 0 0 #ffe55e;
+  cursor: pointer;
+  color: var(--maincolor);
+  font-size: 0.85em;
+  font-weight: bold;
+}
+.img-tobs {
+  height: 300px;
+  width: 200px;
+}
+.img {
+  text-align: center;
+  margin-top: 10%;
+}
+.triangle {
+  display: none;
+}
+
+/*Portfolio navigation*/
+h3 {
+  font-size: 2em;
+  color: var(--maintext);
+  text-align: center;
+  padding-top: 30%;
+  padding-bottom: 10%;
+}
+.post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 25px;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+.img-preview {
+  width: 100%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+}
+.intro-title {
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+}
+.intro-text {
+  color: var(--basictext);
+}
+.preview-text {
+  padding: 15px;
+}
+.post {
+  border: var(--maincolor) solid;
+  border: 1px solid;
+  padding: 10px;
+}
+.link {
+  text-decoration: none;
+  color: var(--maintext);
+}
+
+/*Portfolio undersider*/
+.heading,
+.headingsmall {
+  font-size: 1.5em;
+  color: var(--seondarytext2);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+p {
+  color: var(--secondarytext);
+}
+.smalltext {
+  font-size: 0.6em;
+}
+.headingsmall {
+  font-size: 1em;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 0.7fr;
+  grid-template-rows: 1fr 1fr 10fr;
+  grid-template-areas:
+    "detaljer detaljer"
+    "projekt klient"
+    "projekt dato";
+  grid-gap: 5px;
+  margin-top: 20px;
+}
+
+#detaljer {
+  grid-area: detaljer;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#projekt {
+  grid-area: projekt;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#klient {
+  grid-area: klient;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#dato {
+  grid-area: dato;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.btn2 {
+  color: #e1766b;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 175px;
+  height: 50px;
+  font-size: 0.75em;
+  box-shadow: inset 0 0 0 0 black;
+  transition: ease-out 0.3s;
+  margin-right: 20px;
+}
+.btn2:hover {
+  box-shadow: inset 175px 0 0 0 black;
+  cursor: pointer;
+}
+.fullscreen-img {
+  width: 100%;
+  height: 500px;
+  display: none;
+  padding-top: 20px;
+}
+.flex-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+.flex-container2 {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+.img-portfolio {
+  width: 100%;
+  height: 300px;
+  padding-top: 50px;
+}
+
+@media (min-width: 600px) {
+  /*Forside*/
+  .landing-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .test {
+    align-content: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 1.5em;
+    line-height: 35px;
+    margin-top: 40%;
+  }
+  .img-tobs {
+    width: 200px;
+    height: 350px;
+    margin-top: 40%;
+  }
+
+  /*Portfolio navigation*/
+  h3 {
+    font-size: 3em;
+  }
+
+  /*portfolio underside*/
+  .filler {
+    font-size: 1.75em;
+  }
+}
+
+@media (min-width: 1000px) {
+  /*Forside*/
+  h1 {
+    font-size: 2em;
+    line-height: 50px;
+    margin-top: 5%;
+  }
+
+  h2 {
+    font-size: 0.75em;
+    letter-spacing: 10px;
+  }
+  .btn {
+    width: 150px;
+    height: 50px;
+    margin-top: 2.5%;
+    font-size: 0.75em;
+  }
+  .btn:hover {
+    box-shadow: inset 150px 0 0 0 #ffe55e;
+  }
+  .btn2 {
+    width: 250px;
+  }
+  .btn2:hover {
+    box-shadow: inset 250px 0 0 0 black;
+  }
+  .img-tobs {
+    width: 400px;
+    height: 600px;
+    margin-top: 7%;
+  }
+
+  /*Portfolio navigation*/
+  h3 {
+    padding-top: 15%;
+    padding-bottom: 5%;
+    font-size: 4em;
+    letter-spacing: 5px;
+  }
+  .post-wrapper {
+    grid-template-columns: repeat(auto-fit, 350px);
+  }
+  .img-preview {
+    height: 250px;
+  }
+
+  /*Portfolio underside*/
+  .container {
+    display: grid;
+    height: 40vh;
+    grid-template-columns: 0.5fr 0.5fr 2fr;
+    grid-template-rows: 0.2fr 1fr 0.8fr;
+    grid-template-areas:
+      "dato klient detaljer"
+      "dato projekt detaljer";
+    grid-gap: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10%;
+  }
+  .heading {
+    font-size: 2em;
+  }
+  .headingsmall {
+    font-size: 1em;
+    margin-block-start: 0px;
+  }
+  p {
+    font-size: 1em;
+    margin-block-start: 10px;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  .smalltext {
+    font-size: 0.7em;
+  }
+  .fullscreen-img {
+    display: inline;
+    max-height: 300px;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .flex-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .img-portfolio {
+    width: 50%;
+    height: 500px;
+  }
+  .filler {
+    width: 75%;
+    padding-left: 15%;
+    font-size: 1.75em;
+  }
+}
+
+@media (min-width: 1400px) {
+  /*Forside*/
+  .landing-wrapper {
+    margin-top: 3%;
+    margin-bottom: 8%;
+  }
+  h1 {
+    letter-spacing: 3px;
+    font-size: 2.3em;
+  }
+  h2 {
+    margin-top: 20px;
+  }
+  .img-tobs {
+    margin-top: 3%;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .triangle {
+    display: inline;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 0%;
+  }
+
+  /*Portfolio navigation*/
+  .post-wrapper {
+    grid-template-columns: repeat(auto-fit, 400px);
+  }
+
+  /*Portfolio underside*/
+  .container {
+    display: grid;
+    height: 60vh;
+    grid-template-columns: 0.5fr 0.5fr 2fr;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas:
+      "dato klient detaljer"
+      "dato projekt detaljer";
+    grid-gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10%;
+  }
+  .heading {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .flex-container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .flex-container2 {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
