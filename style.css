@@ -127,6 +127,7 @@ h3 {
 .link {
   text-decoration: none;
   color: var(--maintext);
+  font-size: 1.6em;
 }
 
 /*Portfolio undersider*/
