@@ -309,7 +309,7 @@ p {
     margin-top: 20px;
     margin-right: 40px;
     float: right;
-    display: inline-block;
+    display: inline;
   }
   .navtext {
     text-decoration: none;
