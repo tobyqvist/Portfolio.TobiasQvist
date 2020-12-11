@@ -86,6 +86,107 @@ h5 {
 .triangle {
   display: none;
 }
+.aboutnav {
+  display: none;
+  float: right;
+  margin-top: 35%;
+  margin-right: 3%;
+}
+.aboutmelink {
+  text-decoration: none;
+  color: var(--maintext);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: var(--maincolor);
+  font-size: 1.2em;
+}
+
+/*Om mig underside*/
+.about {
+  background-color: var(--maincolor);
+  color: var(--maintext);
+}
+.outer {
+  position: relative;
+  margin-top: 75px;
+  margin-left: 10px;
+}
+h6 {
+  font-size: 20px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.inner {
+  position: absolute;
+  height: 25px;
+  line-height: 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  overflow: hidden;
+}
+.inner span {
+  animation: animate 10s ease infinite;
+  position: relative;
+  color: var(--maintext);
+}
+@keyframes animate {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 0;
+  }
+  20% {
+    top: -25px;
+  }
+  30% {
+    top: -25px;
+  }
+  40% {
+    top: -50px;
+  }
+  50% {
+    top: -50px;
+  }
+  60% {
+    top: -75px;
+  }
+  70% {
+    top: -75px;
+  }
+  80% {
+    top: -100px;
+  }
+  90% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.abouttext {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.abouttextwrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+.navtext2 {
+  text-decoration: none;
+  color: var(--maintext);
+}
+.scribl {
+  font-family: "Architects Daughter", cursive;
+  font-size: 18px;
+  color: var(--secondarytext);
+  margin-left: 10px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
 
 /*Portfolio navigation*/
 h3 {
@@ -288,6 +389,102 @@ p {
     width: 400px;
     height: 600px;
     margin-top: 7%;
+  }
+  .aboutnav {
+    display: inline;
+    float: right;
+    margin-top: 35%;
+    margin-right: 3%;
+  }
+  .aboutmelink {
+    text-decoration: none;
+    color: var(--maintext);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: var(--maincolor);
+    font-size: 1.2em;
+  }
+
+  /*Om mig underside*/
+  .about {
+    background-color: var(--maincolor);
+    color: var(--maintext);
+  }
+  .outer {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  h6 {
+    font-size: 40px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+  .inner {
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .inner span {
+    animation: animate 10s ease infinite;
+    position: relative;
+    color: var(--maintext);
+  }
+  @keyframes animate {
+    0% {
+      top: 0;
+    }
+    10% {
+      top: 0;
+    }
+    20% {
+      top: -50px;
+    }
+    30% {
+      top: -50px;
+    }
+    40% {
+      top: -100px;
+    }
+    50% {
+      top: -100px;
+    }
+    60% {
+      top: -150px;
+    }
+    70% {
+      top: -150px;
+    }
+    80% {
+      top: -200px;
+    }
+    90% {
+      top: -200px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  .abouttext {
+    font-size: 1.5em;
+  }
+  .abouttextwrapper {
+    margin-left: 100px;
+    margin-bottom: 250px;
+    margin-top: 100px;
+    max-width: 800px;
+  }
+  .scribl {
+    font-family: "Architects Daughter", cursive;
+    font-size: 18px;
+    color: var(--secondarytext);
+    margin-left: 10px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
   }
 
   /*Portfolio navigation*/
