@@ -546,6 +546,7 @@ p {
   .fullscreen-img {
     display: inline;
     max-height: 400px;
+    margin-bottom: 5%;
   }
   .flex-container {
     display: flex;
